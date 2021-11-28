@@ -86,9 +86,9 @@
   } 
   .chatboxinfoZ{
     display: flex;
-    /* box-shadow: 0px 2px  0px 0px  rgb(15, 15, 15);
-    border-radius: 10px; */
-    overflow: visible;
+     box-shadow: 0px 2px  0px 0px  rgb(15, 15, 15);
+    border-radius: 10px; 
+    /*overflow: visible;*/
   }
   .chatImg{
     padding: 2px;
