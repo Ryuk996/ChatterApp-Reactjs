@@ -1,0 +1,26 @@
+.TitleZ{
+    margin-left: 10%;
+    font-size: 20px;
+    font-weight: 800;
+    color: grey;
+    padding-top: 2%;
+
+}
+.FileContentZ{
+    margin-left: 10%;
+  }
+
+@media screen and  (max-width: 600px) {
+    .TitleZ{
+        margin-left: 20%;
+        font-size: 20px;
+        font-weight: 800;
+        color: grey;
+        padding-top: 5%;
+    
+    }
+    .FileContentZ{
+        margin-left: 20%;
+      }
+
+}

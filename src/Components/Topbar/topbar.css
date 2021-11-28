@@ -1,0 +1,191 @@
+.topbarContainer {
+    height: 50px;
+    width: 100%;
+
+    background-color: rgb(3, 8, 63);
+    border-radius: 0px 0px 0px 16px;
+    box-shadow: 2px 2px  2px 2px rgb(15, 15, 15);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+   
+  }
+  
+  .topbarLeft {
+    flex: 3;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .topbarCenter {
+    flex: 5;
+  }
+  
+  .searchbar {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchIcon {
+    font-size: 20px !important;
+    margin-left: 10px;
+  }
+  
+  .searchInput {
+    border: none;
+    width: 70%;
+  }
+  
+  .searchInput:focus {
+    outline: none;
+  }
+  
+  .topbarRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+  }
+  
+  .topbarLink {
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .topbarIcons {
+    display: flex;
+    
+  }
+  
+  .topbarIconItem {
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .topbarIconBadge {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  
+  .topbarImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    
+  }
+
+  .sidenavChat{
+    /* margin-right: 15px;
+    cursor: pointer;
+    position: relative; */
+    height: 100%;
+  /* width: 0; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(10, 10, 10);
+  /* overflow-x: hidden; #111;*/
+  overflow-x: visible;
+  transition: 0.5s;
+  padding-top: 60px;
+  color:aqua;
+  /* color: #111; */
+  width: 250px;
+  overflow-y: scroll;
+  overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+  }
+  .noone{
+    display: none;
+  }
+  
+  .dropdwnOnline{
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+     float: left;
+    /*overflow: hidden; relative;*/
+  }
+
+  .dropdwnOnline:hover {
+    background-color: rgb(111, 0, 255);
+ }
+
+ .dropdwnchatOnline{
+   /* height: 100%; */
+  display: none;
+  position: absolute;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  min-width: 160px ;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1 ;
+  overflow-y: scroll;
+ }
+
+ .dropdwnchatOnline :hover {
+  background-color: rgb(50, 184, 207) !important;
+}
+
+.dropdwnOnline:hover .dropdwnchatOnline {
+  display: block;
+}
+  .drpTxt{
+    font-size: 18px;
+    color: #000;
+  }
+
+
+  @media screen and (max-width: 768px)  {
+    .topbarLink{
+      display: none;
+    }
+  
+    .topbarImg{
+      margin-right: 3%;
+    }
+    .logo {
+      font-size: 15px;
+ 
+      margin-left: 5px;
+    }
+    .topbarLeft {
+      flex: 4;
+    }
+    .dropdwnchatOnline::-webkit-scrollbar {
+      display: none;
+    }
+    .sidenavChat::-webkit-scrollbar {
+      display: none;
+    }
+    
+  }

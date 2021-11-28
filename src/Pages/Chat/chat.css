@@ -1,0 +1,209 @@
+.messenger {
+    height: calc(100vh - 70px);
+    display: flex;
+  }
+  
+  .chatMenu {
+    flex: 3.5;
+  }
+  
+  .chatMenuInput {
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  .chatMenuWrapper{
+    overflow-y: scroll;
+  }
+  .chatBox {
+    flex: 5.5;
+  }
+  
+  .chatBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgb(2, 213, 228);
+    /* background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%); */
+    /* overflow: hidden; */
+  }
+  
+  .chatBoxTop {   
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    margin-top: 7%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+   
+  }
+  
+  .closeChat{
+    position: fixed !important;
+    margin-bottom: 1% !important;
+    cursor: pointer;
+    margin-left: 38%;
+  }
+  .closeChat:hover{
+    color: white;
+  }
+  .chatBoxBottom {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px  solid green;
+    background-color: white;
+    /* overflow: hidden; */
+    /* border-radius: 5px; */
+  }
+  
+  .chatMessageInput {
+    /* width: 80%; */
+    height: 50px;
+    padding: 10px;
+    /* TODO*/
+    /* overflow: hidden; */
+    overflow-y: scroll;
+    margin:  0;
+    /* border:  1px 1px 1px 0px; */
+    border:0;
+    outline: 0;
+    /* width: 100%; */
+    width: calc(100% - 40px);
+    font-size: 20px;
+    resize: none;
+  }
+  .emoji-icon{
+    cursor: pointer;
+    padding: 4px;
+    font-size:xx-large!important;
+    /* padding-left: ;
+    
+    right: 15%; */
+  } 
+  .chatboxinfoZ{
+    display: flex;
+    /* box-shadow: 0px 2px  0px 0px  rgb(15, 15, 15);
+    border-radius: 10px; */
+    overflow: visible;
+  }
+  .chatImg{
+    padding: 2px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    /*/TODO*/
+    /* position: relative;
+    animation-name: DpImg;
+    transition: transform .2s;
+    animation-duration: 2s; */
+    
+  }
+ .chatImg:hover{
+  position: relative;
+  animation-name: DpImg;
+  animation-delay: 2s;
+  transition: transform 2s;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+ }
+    @keyframes  DpImg {
+      from {top: 0px; }
+      to {top: 100px; transform: scale(4.5);}
+  }
+  .chatTxt{
+    padding: 2px;
+    font-size: 20px;
+    font-weight:600;
+    padding-top: 1px;
+    padding-left: 2px;
+    color: white;
+  }
+  .chatSubmitButton {
+
+    font-size:xx-large!important;
+    transform: rotate(-45deg);
+    border: none;
+    cursor: pointer;
+    color: rgb(9, 81, 236);
+    padding: 4px;
+  }
+  
+  .chatOnline {
+    flex: 3;
+  }
+  
+  .chatMenuWrapper,
+  .chatBoxWrapper,
+  .chatOnlineWrapper {
+    padding: 10px;
+    height: 100%;
+  }
+  
+  .noConversationText {
+    position: absolute;
+    top: 10%;
+    font-size: 50px;
+    color: rgb(224, 220, 220);
+    cursor: default;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .chatMenu {
+      /* flex: 1; */
+      display: none;
+    }
+  
+    .chatMenuInput {
+      display: none;
+    }
+  
+    .chatBox{
+      flex: 10;
+      /* margin-right: 2%; */
+    }
+  
+    .chatOnline{
+        display: none;
+      /* flex: 1; */
+      /* display: ; */
+    }
+    .chatBoxTop {
+      padding-right: 10px;
+    }
+    .chatMenuWrapper,
+    .chatBoxWrapper,
+    .chatOnlineWrapper {
+    padding: 10px;
+    /* padding-left: 1%; */
+    height: 100%;
+  }
+  .closeChat{
+    
+    margin-left: 80% !important;
+  }
+  .chatBoxTop::-webkit-scrollbar {
+    display: none;
+  }
+  .chatMessageInput::-webkit-scrollbar {
+    display: none;
+  }
+  /* .chatImg:hover{
+    animation-delay: 1s;
+  } */
+  @keyframes  DpImg {
+    from {top: 0px; }
+    to {top: 50px; transform: scale(2.5);}
+}
+  }
+
+  @media screen and (max-width: 1024px)  {
+    .closeChat{
+      margin-left: 25%;
+    }
+  }

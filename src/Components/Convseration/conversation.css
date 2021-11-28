@@ -1,0 +1,56 @@
+.conversation {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .conversation:hover {
+    background-color: rgb(245, 243, 243,0.9);
+  }
+  
+  .conversationImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .conversationName {
+    
+    font-weight: 500;
+  }
+  .infocontainer{
+    display: inline-block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .conversationStatus{
+    width: 350px;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    /* display: inline-flex;
+    padding-top: 15%;
+    margin-right: 70%;rgb(245, 243, 243); */ 
+    font-weight: 300;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .conversation{
+      border: 1px !important;
+    }
+    .conversation:hover {
+      background-color: rgb(245, 243, 243,0.2);
+    }
+    /* .conversationName {
+      display: none;
+    } */
+    .conversationStatus{
+      width: 160px;
+      font-size: 15px;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    }
+  }
