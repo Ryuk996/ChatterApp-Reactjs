@@ -169,10 +169,12 @@
     .topbarLink{
       display: none;
     }
-  
-    .topbarImg{
-      margin-right: 3%;
+    .topbarRight{
+      margin-right: 2%;
     }
+    /*.topbarImg{
+      margin-right: 3%;
+    }*/
     .logo {
       font-size: 15px;
  
