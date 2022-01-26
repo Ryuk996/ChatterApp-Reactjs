@@ -27,6 +27,10 @@
     font-size: 10px;
     color: tomato;
   }
+    .credicon{
+    font-size: 1.3rem !important;
+    padding-top: 1px !important;
+  }
   @media (max-width: 768px) {
     .form-signin{
       padding: 15px;
