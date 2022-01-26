@@ -77,6 +77,11 @@ function Login() {
                 </form>
                     {err&& showErrMsg(err)}
                     {success && showSuccessMsg(success)}
+                    <div className="credential">                                                        //TODO
+                        <h6>Demo credential</h6>
+                        <h6>userId : emliya@thail.com</h6>
+                        <h6>password : 12345678</h6>
+                    </div>
                 <span class=" text-white">New user ?</span><Link to="/register" className="register"> Register</Link>
             </div>
         </div>
