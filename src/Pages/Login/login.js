@@ -77,7 +77,7 @@ function Login() {
                 </form>
                     {err&& showErrMsg(err)}
                     {success && showSuccessMsg(success)}
-                    <div className="credential">                                                        //TODO
+                    <div className="credential">                                                        
                         <h6>Demo credential</h6>
                         <h6>userId : emliya@thail.com</h6>
                         <h6>password : 12345678</h6>
