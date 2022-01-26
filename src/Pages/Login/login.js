@@ -10,6 +10,7 @@ import {showErrMsg,showSuccessMsg} from "../../Notifications/Notification"
 import {useDispatch} from 'react-redux';
 import { dispatchLogin } from '../../Redux/Action/authAction';
 import Forgotpassword from '../Forgotpassword';
+import { Email, LockOpen } from '@material-ui/icons';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Login() {
@@ -77,10 +78,10 @@ function Login() {
                 </form>
                     {err&& showErrMsg(err)}
                     {success && showSuccessMsg(success)}
-                    <div className="credential">                                                        
+                     <div className="credential">                                                   
                         <h6>Demo credential</h6>
-                        <h6>userId : emliya@thail.com</h6>
-                        <h6>password : 12345678</h6>
+                        <h6><Email className="credicon"/>: emliya@thail.com</h6>
+                        <h6><LockOpen className="credicon"/>: 12345678</h6>
                     </div>
                 <span class=" text-white">New user ?</span><Link to="/register" className="register"> Register</Link>
             </div>
